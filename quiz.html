@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Harmony Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="header-title">Let's Test Your Knowledge</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="wildlife.html">Forest Tracker</a></li>
+                    <li><a href="report.html">Mineral and Fossils</a></li>
+                    <li><a href="eco-score.html">Eco-Score Calculator</a></li>
+                    <li><a href="quiz.html">Quizzes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="quiz">
+            <h2>How Much Do You Know About Conservation?</h2>
+            <form id="quiz-form">
+                <div class="question active" id="question1">
+                    <h3>1. What percentage of the Earth's surface is covered by forests?</h3>
+                    <label><input type="radio" name="q1" value="10%"> 10%</label>
+                    <label><input type="radio" name="q1" value="31%"> 31%</label>
+                    <label><input type="radio" name="q1" value="50%"> 50%</label>
+                    <p class="fact">Fun Fact: The Amazon rainforest is so large that it produces 20% of the world's oxygen.</p>
+                </div>
+                <div class="question" id="question2">
+                    <h3>2. Which of the following is a renewable resource?</h3>
+                    <label><input type="radio" name="q2" value="Coal"> Coal</label>
+                    <label><input type="radio" name="q2" value="Wind"> Wind</label>
+                    <label><input type="radio" name="q2" value="Natural Gas"> Natural Gas</label>
+                    <p class="fact">Fun Fact: A single tree can absorb up to 48 pounds of carbon dioxide per year.</p>
+                </div>
+                <div class="question" id="question3">
+                    <h3>3. What is the primary cause of coral bleaching?</h3>
+                    <label><input type="radio" name="q3" value="Overfishing"> Overfishing</label>
+                    <label><input type="radio" name="q3" value="Pollution"> Pollution</label>
+                    <label><input type="radio" name="q3" value="Rising Sea Temperatures"> Rising Sea Temperatures</label>
+                    <p class="fact">Fun Fact: The Great Barrier Reef is the largest living structure on Earth.</p>
+                </div>
+                <div class="question" id="question4">
+                    <h3>4. How much of the world's oxygen is produced by the Amazon rainforest?</h3>
+                    <label><input type="radio" name="q4" value="10%"> 10%</label>
+                    <label><input type="radio" name="q4" value="20%"> 20%</label>
+                    <label><input type="radio" name="q4" value="30%"> 30%</label>
+                    <p class="fact">Fun Fact: Oceans produce more than half of the world's oxygen.</p>
+                </div>
+                <div class="question" id="question5">
+                    <h3>5. Which animal is known as the "engineer of the ecosystem"?</h3>
+                    <label><input type="radio" name="q5" value="Beaver"> Beaver</label>
+                    <label><input type="radio" name="q5" value="Elephant"> Elephant</label>
+                    <label><input type="radio" name="q5" value="Ant"> Ant</label>
+                    <p class="fact">Fun Fact: Elephants are known to create water holes used by other animals.</p>
+                </div>
+                <div class="question" id="question6">
+                    <h3>6. What is the main purpose of a wildlife corridor?</h3>
+                    <label><input type="radio" name="q6" value="To provide food"> To provide food</label>
+                    <label><input type="radio" name="q6" value="To connect habitats"> To connect habitats</label>
+                    <label><input type="radio" name="q6" value="To prevent poaching"> To prevent poaching</label>
+                    <p class="fact">Fun Fact: The Monarch butterfly migrates up to 3,000 miles to find warmer climates.</p>
+                </div>
+                <div class="question" id="question7">
+                    <h3>7. Which country has the largest area of protected land?</h3>
+                    <label><input type="radio" name="q7" value="Brazil"> Brazil</label>
+                    <label><input type="radio" name="q7" value="Australia"> Australia</label>
+                    <label><input type="radio" name="q7" value="United States"> United States</label>
+                    <p class="fact">Fun Fact: Antarctica is the coldest, windiest, and driest continent on Earth.</p>
+                </div>
+                <div class="question" id="question8">
+                    <h3>8. What is the most effective way to reduce plastic waste?</h3>
+                    <label><input type="radio" name="q8" value="Recycling"> Recycling</label>
+                    <label><input type="radio" name="q8" value="Using reusable products"> Using reusable products</label>
+                    <label><input type="radio" name="q8" value="Incineration"> Incineration</label>
+                    <p class="fact">Fun Fact: The Pacific Ocean is home to the Great Pacific Garbage Patch.</p>
+                </div>
+                <div class="question" id="question9">
+                    <h3>9. Which of the following is a keystone species?</h3>
+                    <label><input type="radio" name="q9" value="Sea Otter"> Sea Otter</label>
+                    <label><input type="radio" name="q9" value="Rabbit"> Rabbit</label>
+                    <label><input type="radio" name="q9" value="Pigeon"> Pigeon</label>
+                    <p class="fact">Fun Fact: Bees are responsible for pollinating 70 of the top 100 food crops.</p>
+                </div>
+                <div class="question" id="question10">
+                    <h3>10. What is the main threat to polar bears?</h3>
+                    <label><input type="radio" name="q10" value="Hunting"> Hunting</label>
+                    <label><input type="radio" name="q10" value="Climate Change"> Climate Change</label>
+                    <label><input type="radio" name="q10" value="Pollution"> Pollution</label>
+                    <p class="fact">Fun Fact: Polar bears have black skin under their white fur to absorb heat.</p>
+                </div>
+                <div class="navigation-buttons">
+                    <button type="button" class="prev-button" onclick="prevQuestion()">Previous</button>
+                    <button type="button" class="next-button" onclick="nextQuestion()">Next</button>
+                </div>
+                <button type="submit" class="submit-button">Submit Answers</button>
+            </form>
+            <div id="result" class="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://facebook.com/"><img src="assets/icons/Facebook_Logo_2023.png" alt="Facebook"></a>
+                <a href="https://twitter.com/"><img src="assets/icons/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="assets/icons/InstaLogo.jpg" alt="Instagram"></a>
+                <a href="https://youtube.com"><img src="assets/icons/youtube.jpg" alt="YouTube"></a>
+            </div>
+            <p>&copy; 2024 Nature's Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>

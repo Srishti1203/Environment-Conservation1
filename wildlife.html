@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Tracking and Conservation Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/wildlife.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom JS file -->
+    <script src="js/map.js" defer></script>
+</head>
+<body>
+    <header> 
+        <div class="header-content">
+            <h1 class="header-title">Wildlife Tracking and Conservation Hub</h1>
+            <h2 class="header-subtitle">Education Hub</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="wildlife.html">Forest Tracker</a></li>
+                    <li><a href="report.html">Mineral and Fossils</a></li>
+                    <li><a href="eco-score.html">Eco-Score Calculator</a></li>
+                    <li><a href="quiz.html">Quizzes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Discover and Protect Endangered Species</h2>
+            <p>Welcome to our Wildlife Conservation Education Hub. Learn about endangered species, their habitats, and how we can work together to protect them.</p>
+        </section>
+
+        <section id="forest-statistics">
+            <h2>Global Forest Statistics</h2>
+            <p>Explore key statistics about global forests, including rates of forest change, forest extent, and drivers of deforestation.</p>
+            <div id="forest-charts">
+                <iframe width="630" height="460" frameborder="0" src="https://www.globalforestwatch.org/embed/widget/treeLossPct/global"></iframe>
+                <iframe width="630" height="460" frameborder="0" src="https://www.globalforestwatch.org/embed/widget/treeLossGlobal/global"></iframe>
+                <iframe width="630" height="460" frameborder="0" src="https://www.globalforestwatch.org/embed/widget/treeLossTsc/global"></iframe>
+                <iframe width="630" height="460" frameborder="0" src="https://www.globalforestwatch.org/embed/widget/netChange/global"></iframe>
+                <iframe width="315" height="460" frameborder="0" src="https://www.globalforestwatch.org/embed/widget/treeCoverGain/global"></iframe>
+                <iframe width="315" height="460" frameborder="0" src="https://www.globalforestwatch.org/embed/widget/treeCover/global"></iframe>
+                <iframe width="315" height="460" frameborder="0" src="https://www.globalforestwatch.org/embed/widget/treeCoverLocated/global"></iframe>
+                <iframe width="630" height="460" frameborder="0" src="https://www.globalforestwatch.org/embed/widget/treeLossPct/country/IND"></iframe>
+                <iframe width="315" height="460" frameborder="0" src="https://www.globalforestwatch.org/embed/widget/treeLossLocated/country/IND"></iframe>
+                <iframe width="630" height="460" frameborder="0" src="https://www.globalforestwatch.org/embed/widget/netChange/country/IND"></iframe>
+            </div>
+        </section>
+
+        <section id="species-tracker">
+            <h2>Endangered, Vulnerable, and Indigenous Species of India</h2>
+            <p>Learn about 20 species of animals and plants that are endangered, vulnerable, or indigenous to India:</p>
+            <ul>
+                <li><strong>Bengal Tiger (Panthera tigris tigris)</strong> - Endangered</li>
+                <li><strong>Asiatic Lion (Panthera leo persica)</strong> - Endangered</li>
+                <li><strong>Indian Elephant (Elephas maximus indicus)</strong> - Endangered</li>
+                <li><strong>Great Indian Bustard (Ardeotis nigriceps)</strong> - Critically Endangered</li>
+                <li><strong>Snow Leopard (Panthera uncia)</strong> - Vulnerable</li>
+                <li><strong>Nilgiri Tahr (Nilgiritragus hylocrius)</strong> - Endangered</li>
+                <li><strong>Red Panda (Ailurus fulgens)</strong> - Endangered</li>
+                <li><strong>Ganges River Dolphin (Platanista gangetica)</strong> - Endangered</li>
+                <li><strong>Sloth Bear (Melursus ursinus)</strong> - Vulnerable</li>
+                <li><strong>Indian Pangolin (Manis crassicaudata)</strong> - Endangered</li>
+                <li><strong>Blackbuck (Antilope cervicapra)</strong> - Near Threatened</li>
+                <li><strong>Indian Rhinoceros (Rhinoceros unicornis)</strong> - Vulnerable</li>
+                <li><strong>Malabar Giant Squirrel (Ratufa indica)</strong> - Near Threatened</li>
+                <li><strong>Sarus Crane (Antigone antigone)</strong> - Vulnerable</li>
+                <li><strong>Indus River Dolphin (Platanista minor)</strong> - Endangered</li>
+                <li><strong>Chilgoza Pine (Pinus gerardiana)</strong> - Indigenous, Vulnerable</li>
+                <li><strong>Shorea Robusta (Sal Tree)</strong> - Indigenous, used in local resources</li>
+                <li><strong>Indian Wild Dog (Dhole)</strong> - Endangered</li>
+                <li><strong>Indian Star Tortoise (Geochelone elegans)</strong> - Vulnerable</li>
+                <li><strong>Western Ghats Frog (Indirana leithii)</strong> - Endangered</li>
+            </ul>
+            <p>These species face threats such as habitat loss, poaching, and climate change. Conservation efforts focus on habitat restoration, anti-poaching measures, and public awareness programs to protect them.</p>
+        </section>
+
+        <section id="conservation-tips">
+            <h2>Conservation Tips and Resource Protection</h2>
+            <p>Natural resource conservation is essential to maintain biodiversity and sustain ecosystems. Here are some key ways to contribute:</p>
+            <ul>
+                <li><strong>Water Conservation:</strong> Rainwater harvesting, using efficient irrigation systems, and reducing water wastage in daily use.</li>
+                <li><strong>Forest Conservation:</strong> Support reforestation efforts, avoid illegal logging, and promote the use of sustainable wood products.</li>
+                <li><strong>Soil Preservation:</strong> Encourage organic farming, reduce chemical usage, and engage in soil conservation methods like terracing and crop rotation.</li>
+                <li><strong>Wildlife Protection:</strong> Engage in anti-poaching initiatives, create wildlife corridors, and educate communities about human-wildlife coexistence.</li>
+                <li><strong>Energy Conservation:</strong> Shift to renewable energy sources, minimize fossil fuel consumption, and adopt energy-efficient technologies.</li>
+                <li><strong>Waste Management:</strong> Implement recycling, reduce single-use plastics, and compost organic waste.</li>
+                <li><strong>Marine Conservation:</strong> Participate in beach cleanups, reduce chemical runoff into oceans, and support sustainable fishing practices.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://facebook.com/"><img src="assets/icons/Facebook_Logo_2023.png" alt="Facebook"></a>
+                <a href="https://twitter.com/"><img src="assets/icons/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="assets/icons/InstaLogo.jpg" alt="Instagram"></a>
+                <a href="https://youtube.com"><img src="assets/icons/youtube.jpg" alt="YouTube"></a>
+            </div>
+            <p>&copy; 2024 Nature's Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function initMap() {
+            const map = L.map('map').setView([0, 0], 2);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+            // Example markers (can be modified as needed)
+            L.marker([51.5, -0.09]).addTo(map).bindPopup('Peregrine Falcon sighting');
+            L.marker([40.7, -74.0]).addTo(map).bindPopup('Bald Eagle nesting site');
+            L.marker([-33.9, 151.2]).addTo(map).bindPopup('Koala habitat');
+        }
+        window.onload = function() {
+            initMap();
+        };
+    </script>
+</body>
+</html>

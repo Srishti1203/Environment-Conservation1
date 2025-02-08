@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Score Calculator - Nature's Harmony</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eco-score.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="header-title">Find Your Eco-Score</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="wildlife.html">Forest Tracker</a></li>
+                    <li><a href="report.html">Mineral and Fossils</a></li>
+                    <li><a href="eco-score.html">Eco-Score Calculator</a></li>
+                    <li><a href="quiz.html">Quizzes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="eco-score-intro">
+            <h2>What is an Eco-Score?</h2>
+            <p>The Eco-Score is a measure of your environmental impact based on your lifestyle choices. It helps you understand how your daily activities contribute to your carbon footprint and offers insights into how you can reduce your impact on the planet.</p>
+        </section>
+
+        <section id="eco-score-calculator">
+            <h2>Calculate Your Eco-Score</h2>
+            <form id="eco-score-form">
+                <label for="energy">Energy Consumption (kWh/month):</label>
+                <input type="number" id="energy" name="energy" required>
+
+                <label for="water">Water Usage (liters/day):</label>
+                <input type="number" id="water" name="water" required>
+
+                <label for="waste">Waste Production (kg/week):</label>
+                <input type="number" id="waste" name="waste" required>
+
+                <label for="transport">Transport (km/week):</label>
+                <input type="number" id="transport" name="transport" required>
+
+                <button type="submit">Calculate Eco-Score</button>
+            </form>
+            <div id="eco-score-result" class="result"></div>
+        </section>
+
+        <section id="eco-tips">
+            <h2>Tips to Improve Your Eco-Score</h2>
+            <ul>
+                <li>Switch to energy-efficient appliances to reduce energy consumption.</li>
+                <li>Take shorter showers and fix leaks to conserve water.</li>
+                <li>Recycle and compost to minimize waste production.</li>
+                <li>Use public transport, carpool, or cycle to reduce your carbon footprint.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://facebook.com/"><img src="assets/icons/Facebook_Logo_2023.png" alt="Facebook"></a>
+                <a href="https://twitter.com/"><img src="assets/icons/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="assets/icons/InstaLogo.jpg" alt="Instagram"></a>
+                <a href="https://youtube.com"><img src="assets/icons/youtube.jpg" alt="YouTube"></a>
+            </div>
+            <p>&copy; 2024 Nature's Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/eco-score.js"></script>
+</body>
+</html>

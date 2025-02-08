@@ -1,0 +1,139 @@
+/* Quiz Styles */
+body {
+    background-color: #f0f9f7;
+    font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#quiz {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-size: 28px;
+    color: #ff7e5f;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.question {
+    display: none;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+.question.active {
+    display: block;
+}
+
+.question:hover {
+    transform: scale(1.02);
+    background-color: #f0f0f0;
+}
+
+.question h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+label:hover {
+    color: #ff7e5f;
+    transform: translateX(5px);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.fact {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+    font-style: italic;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.prev-button, .next-button, .submit-button {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prev-button:hover, .next-button:hover, .submit-button:hover {
+    background-color: #e76f51;
+    transform: scale(1.05);
+}
+
+.result {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ff7e5f;
+    color: white;
+    
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

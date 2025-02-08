@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minerals & Fossil Fuels Conservation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/report.css">
+    <script>
+        // Fetching data from the Fossil Fuel Registry API
+        async function fetchMineralData() {
+            const response = await fetch('https://api.fossilfuelregistry.org/graphql', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    query: `
+                    {
+                      resources {
+                        country
+                        mineralType
+                        productionVolume
+                        extractionMethod
+                        environmentalImpact
+                        year
+                      }
+                    }
+                    `,
+                }),
+            });
+
+            const result = await response.json();
+            return result.data.resources;
+        }
+
+        // Displaying the fetched mineral data in the 'mineral-data' section
+        fetchMineralData().then(resources => {
+            const mineralSection = document.getElementById('mineral-data');
+            resources.forEach(resource => {
+                const resourceInfo = `
+                    <div class="mineral-item">
+                        <h4>${resource.mineralType} in ${resource.country}</h4>
+                        <p>Year: ${resource.year}</p>
+                        <p>Production Volume: ${resource.productionVolume}</p>
+                        <p>Extraction Method: ${resource.extractionMethod}</p>
+                        <p>Environmental Impact: ${resource.environmentalImpact}</p>
+                    </div>
+                `;
+                mineralSection.innerHTML += resourceInfo;
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="header-title">Minerals & Fossil Fuels Conservation</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="wildlife.html">Forest Tracker</a></li>
+                <li><a href="eco-score.html">Eco-Score Calculator</a></li>
+                <li><a href="quiz.html">Quizzes</a></li>
+                <li><a href="report.html">Minerals & Fossil Fuels</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mineral-overview">
+            <h2>Overview of Mineral Resources</h2>
+            <p>
+                Mineral resources play a vital role in global infrastructure, manufacturing, and technology. Minerals such as iron, copper, and gold are essential for various sectors. Understanding their extraction, usage, and conservation is crucial for sustainable development.
+            </p>
+        </section>
+
+        <section id="minerals">
+            <h3>Key Mineral Resources</h3>
+            <div class="mineral-grid" id="mineral-data">
+                <!-- Mineral data fetched from API will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="fossil-fuels">
+            <h2>Fossil Fuels</h2>
+            <p>
+                Fossil fuels—coal, oil, and natural gas—are the primary sources of energy worldwide, but their extraction and consumption have significant environmental impacts. Conservation of these non-renewable resources is essential to reduce carbon emissions and move towards a sustainable future.
+            </p>
+
+            <div class="fossil-grid">
+                <div class="fossil-item">
+                    <h4>Coal</h4>
+                    <p>Used for electricity generation, coal is a major contributor to CO2 emissions. Alternatives such as renewable energy sources are vital to replace it.</p>
+                </div>
+                <div class="fossil-item">
+                    <h4>Oil</h4>
+                    <p>Oil is critical for transportation, heating, and manufacturing but is also the largest source of global greenhouse gas emissions.</p>
+                </div>
+                <div class="fossil-item">
+                    <h4>Natural Gas</h4>
+                    <p>Though considered a cleaner fossil fuel, natural gas still releases significant amounts of methane, a potent greenhouse gas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="carbon-footprint">
+            <h2>Carbon Footprint: What You Can Do</h2>
+            <p>
+                A carbon footprint represents the total greenhouse gas emissions caused by an individual, organization, or product. The primary sources include energy consumption, transportation, and food production. Reducing your carbon footprint helps mitigate climate change and environmental degradation.
+            </p>
+            <h3>Ways to Reduce Your Carbon Footprint:</h3>
+            <ul>
+                <li>Switch to energy-efficient appliances and renewable energy at home.</li>
+                <li>Use public transport, carpool, or switch to electric vehicles.</li>
+                <li>Reduce meat consumption and waste less food.</li>
+                <li>Recycle and reuse materials to reduce resource consumption.</li>
+            </ul>
+        </section>
+
+        <section id="renewable-energy">
+            <h2>Renewable Energy Alternatives</h2>
+            <p>
+                Renewable energy sources like solar, wind, and hydropower offer sustainable solutions to reduce reliance on fossil fuels. Unlike fossil fuels, renewables generate electricity without releasing harmful emissions.
+            </p>
+            <h3>Types of Renewable Energy:</h3>
+            <ul>
+                <li><strong>Solar Energy:</strong> Uses sunlight to generate electricity with photovoltaic cells.</li>
+                <li><strong>Wind Energy:</strong> Harnesses wind power through turbines to produce energy.</li>
+                <li><strong>Hydropower:</strong> Generates electricity from the flow of water, usually in dams.</li>
+                <li><strong>Geothermal Energy:</strong> Extracts heat from beneath the Earth’s surface for electricity and heating.</li>
+                <li><strong>Biomass:</strong> Produces energy from organic materials like crop waste and wood.</li>
+            </ul>
+        </section>
+
+        <section id="interactive-ideas">
+            <h2>Explore & Engage: Conservation Tools and Resources</h2>
+            <p>Get involved in the conservation of our planet's natural resources by utilizing these tools and activities.</p>
+            <div class="idea-grid">
+                <div class="idea-item">
+                    <h4>Interactive Mining Footprint Map</h4>
+                    <p>An interactive global map that shows mining hotspots and their environmental impact. Users can zoom in on countries and regions to explore the effect of mining activities on biodiversity, water, and air quality.</p>
+                </div>
+                <div class="idea-item">
+                    <h4>Carbon Footprint Calculator</h4>
+                    <p>Calculate your personal carbon footprint based on your energy consumption, transportation habits, and use of fossil fuel-related products.</p>
+                </div>
+                <div class="idea-item">
+                    <h4>Renewable Energy Alternatives Guide</h4>
+                    <p>A comprehensive guide that helps users explore renewable energy alternatives like solar, wind, and geothermal for homes and businesses.</p>
+                </div>
+                <div class="idea-item">
+                    <h4>Resource Depletion Quiz</h4>
+                    <p>Test your knowledge on resource depletion, the environmental impact of mining, and what steps can be taken to conserve our planet's resources.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="educational-tips">
+            <h2>Conservation Tips for Everyday Living</h2>
+            <ul>
+                <li>Limit the use of fossil fuels by opting for public transport or carpooling.</li>
+                <li>Recycle and repurpose metal products to reduce the demand for mining.</li>
+                <li>Switch to energy-efficient appliances and renewable energy at home.</li>
+                <li>Support eco-friendly businesses that use sustainable materials.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://facebook.com/"><img src="assets/icons/Facebook_Logo_2023.png" alt="Facebook"></a>
+                <a href="https://twitter.com/"><img src="assets/icons/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="assets/icons/InstaLogo.jpg" alt="Instagram"></a>
+                <a href="https://youtube.com"><img src="assets/icons/youtube.jpg" alt="YouTube"></a>
+            </div>
+            <p>&copy; 2024 Nature's Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

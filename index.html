@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Harmony - Discover the Beauty of Conservation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY" async defer></script>
+    <script src="js/air-quality.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="header-title"><b>Natural Resource Conservation</b></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="wildlife.html">Forest Tracker</a></li>
+                    <li><a href="report.html">Citizen Report</a></li>
+                    <li><a href="eco-score.html">Eco-Score Calculator</a></li>
+                    <li><a href="quiz.html">Quizzes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="intro">
+            <h1>Discover the Beauty and Importance of Nature</h1>
+            <p>Join us on an extraordinary journey to conserve and protect our planet's natural resources. Explore our initiatives, participate in projects, and learn how you can make a lasting impact. Together, we can preserve the wonders of our world for generations to come.</p>
+            <a href="#" class="cta-button">Get Involved</a>
+        </section>
+        <section id="did-you-know">
+            <h2>Did You Know?</h2>
+            <ul>
+                <li>Over 80% of the world's terrestrial biodiversity can be found in forests.</li>
+                <li>Coral reefs support more species per unit area than any other marine environment.</li>
+                <li>Wetlands are among the most productive ecosystems in the world, providing numerous ecological services.</li>
+            </ul>
+        </section>
+        <section id="latest-news">
+            <h2>Latest News & Inspiring Stories</h2>
+            <div class="news-grid">
+                <article>
+                    <img src="https://th.bing.com/th/id/OIP.Dab65tQ8xry3-gqaf6qMtQHaFj?rs=1&pid=ImgDetMain/200x100" alt="Protecting Endangered Species">
+                    <h3>Protecting Endangered Species: Success Stories</h3>
+                    <p>Our recent efforts have led to significant improvements in the populations of several endangered species, including tigers, elephants, and rhinoceroses. Learn more about these success stories and how you can help.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                <article>
+                    <img src="https://th.bing.com/th/id/OIP.8U0PrjA6cc-rT4qXGvZyRQHaEL?rs=1&pid=ImgDetMain/400x300" alt="Community Clean-Up Drive">
+                    <h3>Community Clean-Up Drive: A Huge Success</h3>
+                    <p>Last weekend's community clean-up drive saw over 500 volunteers participate in removing litter and waste from local parks and rivers. Discover the impact we've made and how you can get involved in future events.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+            </div>
+            <section id="api-data">
+                <h2>Explore Environmental Trends</h2>
+                <div class="data-grid">
+                    <!-- Air Quality Section for Indian Cities -->
+                    <div id="air-quality-widgets">
+                        <h3>Real-Time Air Quality for Major Indian Cities</h3>
+                        <div class="widget">
+                            <iframe title="Delhi Air Quality" height="340" width="230" src="https://widget.airnow.gov/aq-dial-widget/?city=Delhi&state=Delhi&country=India" style="border: none; border-radius: 25px;"></iframe>
+                        </div>
+                        <div class="widget">
+                            <iframe title="Mumbai Air Quality" height="340" width="230" src="https://widget.airnow.gov/aq-dial-widget/?city=Mumbai&state=Maharashtra&country=India" style="border: none; border-radius: 25px;"></iframe>
+                        </div>
+                        <div class="widget">
+                            <iframe title="Chennai Air Quality" height="340" width="230" src="https://widget.airnow.gov/aq-dial-widget/?city=Chennai&state=Tamil Nadu&country=India" style="border: none; border-radius: 25px;"></iframe>
+                        </div>
+                        <div class="widget">
+                            <iframe title="Kolkata Air Quality" height="340" width="230" src="https://widget.airnow.gov/aq-dial-widget/?city=Kolkata&state=West Bengal&country=India" style="border: none; border-radius: 25px;"></iframe>
+                        </div>
+                        <p>Click on the map to see real-time air quality data for any location.</p>
+                    </div>
+            
+                    <section id="conservation-facts">
+                        <h2>Conservation Facts That Matter</h2>
+                        <p>Conservation is critical for maintaining the health and stability of ecosystems around the globe. Here are some key facts about why conservation is important:</p>
+                        <ul>
+                            <li>Forests are home to over 80% of terrestrial species, providing essential habitat for wildlife.</li>
+                            <li>Climate change has resulted in the extinction of nearly 1 million species worldwide.</li>
+                            <li>Coral reefs, which protect shorelines and support marine biodiversity, could be extinct by 2050 due to rising sea temperatures.</li>
+                            <li>More than 1.6 billion people rely on forests for their livelihoods, including food, fresh water, clothing, and shelter.</li>
+                            <li>The oceans produce over 50% of the world’s oxygen and absorb significant amounts of carbon dioxide.</li>
+                        </ul>
+                    </section>
+            
+                    <section id="why-conservation-matters">
+                        <h2>Why Conservation Matters</h2>
+                        <p>Conservation helps preserve biodiversity, which is critical to the survival of ecosystems and humanity. By protecting endangered species, conserving natural habitats, and promoting sustainable practices, we help maintain the delicate balance of life on Earth.</p>
+                        <p><b>Key Conservation Efforts:</b></p>
+                        <ul>
+                            <li><b>Habitat Restoration:</b> Restoring habitats is vital for the recovery of threatened species and ecosystems.</li>
+                            <li><b>Combating Climate Change:</b> Efforts to reduce greenhouse gas emissions can slow climate change and its devastating impacts on biodiversity.</li>
+                            <li><b>Pollution Reduction:</b> Reducing plastic waste, managing industrial pollution, and preserving clean water sources is crucial for ecosystem health.</li>
+                        </ul>
+                    </section>
+            
+                    <section id="citizen-contribution">
+                        <h2>How You Can Contribute to Conservation</h2>
+                        <p>Every individual can make a difference in protecting the planet. Here are some ways you can get involved:</p>
+                        <ul>
+                            <li><b>Reduce, Reuse, Recycle:</b> Simple actions, such as reducing waste, reusing materials, and recycling, can have a big impact on the environment.</li>
+                            <li><b>Volunteer:</b> Join local conservation efforts, such as clean-up drives, tree planting events, and wildlife monitoring projects.</li>
+                <li><b>Educate Yourself and Others:</b> Stay informed about environmental issues and share your knowledge with friends and family.</li>
+                <li><b>Support Conservation Organizations:</b> Donate to or volunteer with organizations working to protect wildlife and natural habitats.</li>
+                <li><b>Advocate for Change:</b> Contact your representatives to support policies that promote environmental protection and sustainable practices.</li>
+            </ul>
+            
+                </div>
+            </section>
+            
+            
+        <section id="project-highlights">
+            <h2>Explore Our Impactful Projects</h2>
+            <div class="highlight-grid">
+                <div class="highlight-item">
+                    <img src="https://th.bing.com/th/id/R.3d48c7f271147b5149468f7950369b0b?rik=AdVC0r1%2fZ0Nx1w&pid=ImgRaw&r=0/300x200" alt="Water Conservation">
+                    <h3>Water Conservation Initiatives</h3>
+                    <p>Our water conservation initiatives aim to reduce water waste and preserve this essential resource. Through education and innovative technologies, we're making a difference in communities around the world.</p>
+                    <a href="#" class="read-more">Learn More</a>
+                </div>
+                <div class="highlight-item">
+                    <img src="https://th.bing.com/th/id/R.87e68dfdc68a4cd9b04503445012293e?rik=Z6Xx3aobYWiCPA&riu=http%3a%2f%2fwww.nycgovparks.org%2fsub_about%2fparks_divisions%2fnrg%2fimages%2finwood_big.jpg&ehk=kjBnCiY5xLsLU6HbSyEzYvrGISkBJH9juWWSrdgYf%2bk%3d&risl=&pid=ImgRaw&r=0/300x200" alt="Forest Restoration">
+                    <h3>Forest Restoration Projects</h3>
+                    <p>We are dedicated to restoring forests that have been affected by deforestation and degradation. Our projects include planting native trees, preventing soil erosion, and promoting biodiversity.</p>
+                    <a href="#" class="read-more">Learn More</a>
+                </div>
+                <div class="highlight-item">
+                    <img src="https://th.bing.com/th/id/OIP.x-FqDP_ktZ_LVwrDDjnWNQHaEO?rs=1&pid=ImgDetMain/300x200" alt="Climate Change Research">
+                    <h3>Climate Change Research</h3>
+                    <p>Our team conducts extensive research on climate change and its impact on ecosystems. By understanding these changes, we can develop strategies to mitigate their effects and protect vulnerable species.</p>
+                    <a href="#" class="read-more">Learn More</a>
+                </div>
+                <div class="highlight-item">
+                    <img src="https://th.bing.com/th/id/R.00341dd3f20c5c8568aa344fc76e165f?rik=q1D1GFtLZaKxLA&pid=ImgRaw&r=0/300x200" alt="Community Engagement">
+                    <h3>Community Engagement</h3>
+                    <p>Engaging with local communities is at the heart of our conservation efforts. We collaborate with schools, organizations, and volunteers to raise awareness and encourage sustainable practices.</p>
+                    <a href="#" class="read-more">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section id="facts-figures">
+            <h2>Facts & Figures</h2>
+            <p>Did you know that approximately 1.6 billion people depend on forests for their livelihoods? Forests provide jobs for more than 13 million people across the world.</p>
+            <p>Oceans cover more than 70% of the Earth's surface and contain 97% of the planet's water. They produce over half of the world's oxygen and absorb 50 times more carbon dioxide than our atmosphere.</p>
+        </section>
+        </main>
+        <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://facebook.com/"><img src="assets/icons/Facebook_Logo_2023.png" alt="Facebook"></a>
+                <a href="https://twitter.com/"><img src="assets/icons/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="assets/icons/InstaLogo.jpg" alt="Instagram"></a>
+                <a href="https://youtube.com"><img src="assets/icons/youtube.jpg" alt="YouTube"></a>
+            </div>
+            <p>&copy; 2024 Nature's Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

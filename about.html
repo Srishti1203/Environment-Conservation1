@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nature's Harmony</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-database.js"></script>
+    <script src="js/contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h2 class="header-subtitle">About Us</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="wildlife.html">Forest Tracker</a></li>
+                    <li><a href="report.html">Mineral and Fossils </a></li>
+                    <li><a href="eco-score.html">Eco-Score Calculator</a></li>
+                    <li><a href="quiz.html">Quizzes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="mission-vision">
+            <h2>Our Mission & Vision</h2>
+            <p>At Nature's Harmony, our mission is to conserve and protect the planet's natural resources for future generations. We envision a world where nature and humanity coexist in harmony, fostering a sustainable and thriving environment for all living beings.</p>
+        </section>
+
+        <section id="our-story">
+            <h2>Our Story</h2>
+            <p>Founded in 2020, Nature's Harmony began as a small group of passionate environmentalists dedicated to making a difference. Over the years, we have grown into a global movement, inspiring individuals and communities to take action and protect our planet.</p>
+            <p>Our journey has been fueled by the belief that every small action can lead to significant change. From organizing community clean-ups to advocating for policy changes, we are committed to creating a positive impact on the environment.</p>
+        </section>
+
+        <section id="key-initiatives">
+            <h2>Key Initiatives</h2>
+            <div class="initiatives-grid">
+                <div class="initiative-item">
+                    <h3>Wildlife Conservation</h3>
+                    <p>We work tirelessly to protect endangered species and their habitats, ensuring biodiversity is preserved for future generations.</p>
+                </div>
+                <div class="initiative-item">
+                    <h3>Climate Action</h3>
+                    <p>Our climate action programs focus on reducing carbon emissions and promoting renewable energy solutions to combat climate change.</p>
+                </div>
+                <div class="initiative-item">
+                    <h3>Community Engagement</h3>
+                    <p>We empower communities to take part in conservation efforts through education, workshops, and volunteer opportunities.</p>
+                </div>
+                <div class="initiative-item">
+                    <h3>Water Conservation</h3>
+                    <p>Our water conservation projects aim to reduce water waste and promote sustainable water management practices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form id="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Feedback</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <footer>
+            <div class="footer-content">
+                <div class="social-media">
+                    <a href="https://facebook.com/"><img src="assets/icons/Facebook_Logo_2023.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/"><img src="assets/icons/twitter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com"><img src="assets/icons/InstaLogo.jpg" alt="Instagram"></a>
+                    <a href="https://youtube.com"><img src="assets/icons/youtube.jpg" alt="YouTube"></a>
+                </div>
+                <p>&copy; 2024 Nature's Harmony. All rights reserved.</p>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>
